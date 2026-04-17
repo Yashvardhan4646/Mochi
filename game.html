@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+<div class="top">
+  <h3>🌸 Blob Buddy</h3>
+  <span id="coins">✨0</span>
+</div>
+
+<div id="pet" class="pet">🐱</div>
+
+<div>Happiness<div class="bar"><span id="h"></span></div></div>
+<div>Hunger<div class="bar"><span id="hu"></span></div></div>
+<div>Energy<div class="bar"><span id="e"></span></div></div>
+
+<div class="actions">
+  <button onclick="feed()">🍓</button>
+  <button onclick="play()">🎮</button>
+  <button onclick="sleep()">🌙</button>
+</div>
+
+<div class="section">
+  <h4>🟢 Players</h4>
+  <div id="users"></div>
+</div>
+
+<div class="section">
+  <h4>💬 Chat</h4>
+  <div id="chat"></div>
+  <input id="msg" placeholder="message..." onkeydown="if(event.key==='Enter')sendMsg()">
+</div>
+
+<div class="section">
+  <h4>📜 Feed</h4>
+  <div id="feed"></div>
+</div>
+
+</div>
+
+<div id="popup" class="popup"></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
